@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ReadAndWrite.css" />
+    <title>Contact</title>
+</head>
+<body>
+    <div id="navigation-bar" class="navigation-bar" >
+        <h1 class="sign">Cool Blog</h1>
+        <div id="navigation" class="navigation">
+          <a href="ReadAndWrite.html"><h2 class="nav">Home</h2></a>
+          <a href="contact.html"><h2 class="nav">Contact</h2></a>
+        </div>
+      </div>
+      <div id="my-Form-div" class="my-Form-div" style="margin-top:100px ;">
+      <form class="my-Form" onsubmit="getInformationsAndPostThem();return false">
+        <label for="subject">subject</label>
+        <input id="subject" type="text"  required/>
+        <label for="text">message</label>
+        <textarea
+          name="text"
+          id="text"
+          cols="30"
+          rows="10"
+          style="resize:none ;"
+          placeholder="Insert your message here"
+          required
+        ></textarea>
+        <a onclick="sendEmail()" id="linkEmail" href="">Send email</a>
+      </form>
+    </div>
+  </div>
+    <script src="readAndWrite.js"></script>
+</body>
+</html>

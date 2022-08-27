@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ReadAndWrite.css" />
+    <title>blog</title>
+  </head>
+  <body onload="readFile()">
+    <div id="navigation-bar" class="navigation-bar">
+      <h1 class="sign">Cool Blog</h1>
+      <div id="navigation" class="navigation">
+        <a href="ReadAndWrite.html"><h2 class="nav">Home</h2></a>
+        <a href="contact.html"><h2 class="nav">Contact</h2></a>
+      </div>
+    </div>
+    <!-- introduction -->
+    <div id="my-Form-div" class="my-Form-div">
+      <div id="introduction" class="introduction-div">
+        <h1>
+          Welcome in the cool blog
+        </h1>
+        <p>here you can write anything cool you wish!<br> we can't wait to read whatever cool thing you have to say!</p>
+      </div>
+      <form class="my-Form" onsubmit="getInformationsAndPostThem();return false">
+        <label for="title">Title</label>
+        <input id="title" type="text"  required/>
+        <label for="author">Author</label>
+        <input id="author" type="text"  required />
+        <label for="message">message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          style="resize:none ;"
+          placeholder="Insert your text here"
+          required
+        ></textarea>
+        <input type="submit"></button>
+      </form>
+      <div id="output-message-div"></div>
+    </div>
+    <script src="readAndWrite.js"></script>
+  </body>
+</html>

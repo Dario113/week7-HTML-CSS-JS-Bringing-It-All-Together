@@ -1,0 +1,132 @@
+/* gobal setting */
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+footer > h3 {
+  text-align: center;
+}
+
+img {
+  width: auto;
+  height: 40px;
+}
+
+p {
+  margin: 10px;
+}
+
+/* specific settings */
+.text-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-center > * {
+  margin: 3px;
+}
+
+.external-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.column-left {
+  display: flex;
+  flex: 30%;
+  justify-content: end;
+  font-style: italic;
+  height: auto;
+}
+
+.column-left > * {
+  margin-right: 50px;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
+  padding-top: 15px;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  width: 140px;
+  height: 50px;
+  margin-right: 30px;
+  border-radius: 10px;
+  border: solid 2px dodgerblue;
+}
+
+.link-button:hover {
+  background-color: green;
+  border: solid 2px dodgerblue;
+  cursor: pointer;
+}
+
+.link-button > h3 {
+  color: white;
+}
+
+.light-mode-div {
+  display: flex;
+  justify-content: end;
+  margin-right: 400px;
+  margin-top: 40px;
+}
+
+.light-mode{
+    position: absolute;
+}
+
+
+/* this animation it's used in javascript */
+.sun-moon-animation{
+    animation-name:moon-sun-animation ;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moon-sun-animation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
